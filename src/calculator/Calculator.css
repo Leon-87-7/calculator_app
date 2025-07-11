@@ -116,6 +116,15 @@ button:focus-visible {
   .switch {
     height: 15%;
     color: #213547;
+    position: relative;
+
+    button {
+      position: absolute;
+      background: var(--clr-pri-light);
+      box-shadow: -1px 1px 3px 1px var(--clr-dark);
+      top: var(--sp-48);
+      left: var(--sp-48)
+    }
   }
 
   .calc-screen {
@@ -130,15 +139,19 @@ button:focus-visible {
 
       .input-sidplay {
         font-size: var(--fs-24);
+        color: var(--clr-sec-light);
       }
 
       .calc-result {
+        color: var(--clr-secondary);
         font-size: var(--fs-40);
         font-weight: var(--fw-semi-bold);
       }
     }
 
     .control-line {
+      font-size: var(--fs-16);
+      color: var(--clr-sec-dark);
       position: absolute;
       bottom: var(--sp-44);
       width: 100%;
@@ -146,12 +159,12 @@ button:focus-visible {
 
     .control-line>:first-child {
       position: absolute;
-      left: var(--sp-24);
+      left: var(--sp-48);
     }
 
     .control-line>:last-child {
       position: absolute;
-      right: var(--sp-24);
+      right: var(--sp-48);
     }
   }
 

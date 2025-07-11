@@ -1,5 +1,15 @@
+import { Backspace } from 'phosphor-react';
+
 function DeleteBtn() {
-  return <div className="delete-btn">delete</div>;
+  return (
+    <div className="delete-btn">
+      <Backspace
+        size={28}
+        color="#bfbfbf"
+        weight="bold"
+      />
+    </div>
+  );
 }
 
 export default DeleteBtn;
