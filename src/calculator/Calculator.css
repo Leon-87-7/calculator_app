@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Color variables using HSL format */
+  --clr-pri-light: hsl(183, 15%, 51%);
+  --clr-primary: hsl(183, 31%, 34%);
+  --clr-pri-dark: hsl(185, 24%, 31%);
+
+  --clr-sec-light: hsl(0, 3%, 94%);
+  --clr-secondary: hsl(0, 0%, 98%);
+  --clr-sec-dark: hsl(0, 0%, 75%);
+
+  --clr-dark: hsl(0, 0%, 14%);
+
+  --clr-border: hsl(0, 2%, 40%);
+  --clr-success: hsl(133, 40%, 40%);
+  --clr-danger: hsl(342, 91%, 66%);
+  --clr-warning: hsl(49, 100%, 50%);
+  --clr-info: hsl(193, 51%, 35%);
+  /* Typography sizes */
+  --heading-size: 3rem;
+  --input-size: 1rem;
+  --text-size: 0.8rem;
+  --text-heading-shadow: 0px 3px 18px hsl(0, 0%, 100%);
+  /* font size */
+  --fs-10: 0.625rem;
+  --fs-14: 0.875rem;
+  --fs-16: 1rem;
+  --fs-20: 1.25rem;
+  --fs-24: 1.5rem;
+  --fs-32: 2rem;
+  --fs-40: 2.5rem;
+  /* font weight */
+  --fw-norm: 400;
+  --fw-semi: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 800;
+  --fw-bolder: 900;
+  /* spaces */
+  --sp-4: 0.25rem;
+  --sp-8: 0.5rem;
+  --sp-12: 0.75rem;
+  --sp-16: 1rem;
+  --sp-20: 1.25rem;
+  --sp-24: 1.5rem;
+  --sp-28: 1.75rem;
+  --sp-32: 2rem;
+  --sp-36: 2.25rem;
+  --sp-40: 2.5rem;
+  --sp-44: 2.75rem;
+  --sp-48: 3rem;
+  --sp-52: 3.25rem;
+  --sp-56: 3.5rem;
+  --sp-60: 3.75rem;
+  --sp-64: 4rem;
+  --sp-68: 4.25rem;
+  --sp-72: 4.5rem;
+  --sp-76: 4.75rem;
+  --sp-80: 5rem;
+  --sp-84: 5.25rem;
+  --sp-88: 5.5rem;
+  --sp-92: 5.75rem;
+  --sp-96: 6rem;
+  --sp-100: 6.25rem;
+  /* Border variables */
+  --border-radius-small: 0.25rem;
+  --border-radius-large: 0.75rem;
+  --border-radius-input-field: 0.75rem 0.75rem 0.25rem 0.25rem;
+  --border-width: 0.125rem;
+}
+
+button {
+  box-shadow: 2px 2px 7px -1px var(--clr-dark);
+  border-radius: var(--border-radius-large);
+  border: 1px solid transparent;
+  font-weight: var(--fw-semi);
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: var(--clr-border);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.main {
+  height: 956px;
+  width: 440px;
+  background: var(--clr-pri-light);
+  color: #fff;
+
+  .calc-screen {
+    height: 40%;
+
+  }
+
+  .num-pad {
+    border-radius: var(--border-radius-large) var(--border-radius-large) 0 0;
+    background: var(--clr-pri-dark);
+    height: 60%;
+    padding-inline: var(--sp-48);
+    padding-top: var(--sp-64);
+    display: grid;
+    grid: repeat(5, var(--sp-88)) /repeat(4, var(--sp-88));
+
+    button {
+      height: var(--sp-72);
+      width: var(--sp-72);
+      font-size: var(--fs-24);
+    }
+  }
+
+  .operators-top {
+    background-color: var(--clr-dark);
+  }
+
+  .operators-right {
+    background-color: var(--clr-primary);
+  }
+
+  .operators-center {
+
+    background-color: var(--clr-sec-light);
+    color: var(--clr-dark);
+  }
+
+
+}
