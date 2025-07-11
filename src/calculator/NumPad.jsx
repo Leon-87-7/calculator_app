@@ -2,7 +2,7 @@ function NumPad() {
   return (
     <div className="num-pad">
       <button className="operators-top">AC</button>
-      <button className="operators-top">()</button>
+      <button className="operators-top">( )</button>
       <button className="operators-top">%</button>
       <button className="operators-right">/</button>
       <button className="operators-center">7</button>

@@ -1,5 +1,5 @@
 function HistoryBtn() {
-  return <div>HistoryBtn</div>;
+  return <div className="history-btn">HistoryBtn</div>;
 }
 
 export default HistoryBtn;

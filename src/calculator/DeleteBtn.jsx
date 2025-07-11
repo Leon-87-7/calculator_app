@@ -1,5 +1,5 @@
 function DeleteBtn() {
-  return <div>delete</div>;
+  return <div className="delete-btn">delete</div>;
 }
 
 export default DeleteBtn;

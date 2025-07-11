@@ -1,5 +1,5 @@
 function LDSwitch() {
-  return <div>switch</div>;
+  return <div className="switch">switch</div>;
 }
 
 export default LDSwitch;
