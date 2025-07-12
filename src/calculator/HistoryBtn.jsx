@@ -5,7 +5,6 @@ function HistoryBtn() {
     <div className="history-btn">
       <ClockCounterClockwise
         size={28}
-        color="#bfbfbf"
         weight="bold"
       />
     </div>

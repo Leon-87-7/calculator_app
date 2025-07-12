@@ -5,7 +5,6 @@ function DeleteBtn() {
     <div className="delete-btn">
       <Backspace
         size={28}
-        color="#bfbfbf"
         weight="bold"
       />
     </div>
