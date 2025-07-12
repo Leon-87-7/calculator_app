@@ -133,8 +133,8 @@ button:focus-visible {
 
 .main {
   position: relative;
-  height: 956px;
-  width: 440px;
+  aspect-ratio: 27/50;
+
   background: var(--clr-pri-light);
   color: #fff;
   transition: background-color 250ms ease-in-out;
