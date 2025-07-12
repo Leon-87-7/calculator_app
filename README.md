@@ -1,5 +1,9 @@
 # Calculator App
 
+## check the calculator in netlify:
+
+https://mycalculator-reactvite.netlify.app/
+
 A modern, responsive calculator application built with React and Vite, featuring a clean interface and comprehensive mathematical functionality.
 
 ## 🚀 Features
