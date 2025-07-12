@@ -36,6 +36,12 @@
   --fs-24: 1.5rem;
   --fs-32: 2rem;
   --fs-40: 2.5rem;
+  --fs-44: 2.75rem;
+  --fs-48: 3rem;
+  --fs-52: 3.25rem;
+  --fs-56: 3.5rem;
+  --fs-60: 3.75rem;
+  --fs-64: 4rem;
   /* font weight */
   --fw-norm: 400;
   --fw-semi: 500;
@@ -193,13 +199,13 @@ button:focus-visible {
       text-align: right;
 
       .input-display {
-        font-size: var(--fs-24);
+        font-size: var(--fs-40);
         color: var(--clr-sec-light);
       }
 
       .calc-result {
         color: var(--clr-secondary);
-        font-size: var(--fs-40);
+        font-size: var(--fs-52);
         font-weight: var(--fw-semi-bold);
       }
     }
@@ -215,6 +221,7 @@ button:focus-visible {
     .control-line>:first-child {
       position: absolute;
       left: var(--sp-48);
+
     }
 
     .control-line>:last-child {
@@ -249,7 +256,7 @@ button:focus-visible {
     }
 
     .operators-center {
-      background-color: var(--clr-sec-light);
+      background-color: var(--clr-sec-dark);
       color: var(--pri-text-clr);
     }
   }

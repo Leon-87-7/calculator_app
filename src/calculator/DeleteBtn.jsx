@@ -1,8 +1,11 @@
 import { Backspace } from 'phosphor-react';
 
-function DeleteBtn() {
+function DeleteBtn({ onDeleteClick }) {
   return (
-    <div className="delete-btn">
+    <div
+      className="delete-btn"
+      onClick={onDeleteClick}
+    >
       <Backspace
         size={28}
         weight="bold"
