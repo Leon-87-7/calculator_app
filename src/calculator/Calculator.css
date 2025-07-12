@@ -235,7 +235,7 @@ button:focus-visible {
     border-radius: var(--border-radius-large) var(--border-radius-large) 0 0;
     background: var(--clr-pri-dark);
     padding-inline: var(--sp-48);
-    padding-top: var(--sp-64);
+    padding-top: var(--sp-40);
     display: grid;
     grid: repeat(5, var(--sp-88)) /repeat(4, var(--sp-88));
 
