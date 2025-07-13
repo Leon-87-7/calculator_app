@@ -8,9 +8,9 @@ import useLocalStorage from 'use-local-storage';
 function Calculator() {
   const [isLight, setIsLight] = useLocalStorage(false);
   const [currentInput, setCurrentInput] = useState('0');
-  const [result, setResult] = useState('');
-  const [operator, setOperator] = useState('');
   const [previousInput, setPreviousInput] = useState('');
+  const [operator, setOperator] = useState('');
+  const [result, setResult] = useState('');
   const [history, setHistory] = useState([]);
 
   const handleNumberClick = (number) => {
@@ -74,6 +74,7 @@ function Calculator() {
     setResult('');
     setOperator('');
     setPreviousInput('');
+    setHistory([]);
   };
 
   const handleDeleteClick = () => {
@@ -100,9 +101,12 @@ function Calculator() {
     }
   };
 
-  const handleParenthesesClick = () => {
-    // Basic parentheses logic - you can expand this
-    console.log('Parentheses clicked');
+  const handleNewClick = () => {
+    setCurrentInput('0');
+    setPreviousInput('');
+    setOperator('');
+    setResult('');
+    console.log('new calculation started');
   };
 
   return (
@@ -135,7 +139,7 @@ function Calculator() {
         onClearClick={handleClearClick}
         onDecimalClick={handleDecimalClick}
         onToggleSignClick={handleToggleSignClick}
-        onParenthesesClick={handleParenthesesClick}
+        onNewClick={handleNewClick}
       />
     </div>
   );

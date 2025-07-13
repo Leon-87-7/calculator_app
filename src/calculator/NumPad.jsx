@@ -5,7 +5,7 @@ function NumPad({
   onClearClick,
   onDecimalClick,
   onToggleSignClick,
-  onParenthesesClick,
+  onNewClick,
 }) {
   return (
     <div className="num-pad">
@@ -17,9 +17,9 @@ function NumPad({
       </button>
       <button
         className="operators-top"
-        onClick={onParenthesesClick}
+        onClick={onNewClick}
       >
-        ( )
+        New
       </button>
       <button
         className="operators-top"
