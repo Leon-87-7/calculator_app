@@ -2,6 +2,7 @@ import CalcScreen from './CalcScreen';
 import './Calculator.css';
 import NumPad from './NumPad';
 import { useState } from 'react';
+import Switch from 'react-switch';
 import { Toggle } from './Toggle/Toggle';
 import useLocalStorage from 'use-local-storage';
 
@@ -109,18 +110,24 @@ function Calculator() {
     console.log('new calculation started');
   };
 
+  const handleChange = (next) => {
+    setIsLight(next);
+  };
+
   return (
     <div
       className="main"
       data-them={isLight ? 'light' : 'dark'}
     >
       <div className="spacer">
-        <Toggle
-          isChecked={isLight}
-          handleChange={() => {
-            setIsLight(!isLight);
-          }}
+        <Switch
+          onChange={handleChange}
+          checked={isLight}
+          className="react-switch"
         />
+        <div className="status">
+          {isLight ? 'Light' : 'Dark'} Mode{' '}
+        </div>
       </div>
 
       <CalcScreen
@@ -146,3 +153,12 @@ function Calculator() {
 }
 
 export default Calculator;
+
+{
+  /* <Toggle
+          isChecked={isLight}
+          handleChange={() => {
+            setIsLight(!isLight);
+          }}
+        /> */
+}

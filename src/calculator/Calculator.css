@@ -142,8 +142,24 @@ button:focus-visible {
   .spacer {
     position: relative;
     height: 15%;
+    display: flex;
+    flex-direction: column;
+
+    .react-switch {
+      position: absolute;
+      margin: var(--sp-24);
+    }
+
+    .status {
+      position: absolute;
+      left: var(--sp-24);
+      top: var(--sp-52);
+      font-weight: var(--fw-semi);
+      color: var(--clr-sec-dark);
+    }
   }
 
+  /*
   .toggle-container {
     position: absolute;
     top: var(--sp-48);
@@ -186,7 +202,7 @@ button:focus-visible {
       transform: translateX(100%);
     }
 
-  }
+  }*/
 
   .calc-screen {
     height: 25%;
