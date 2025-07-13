@@ -13,7 +13,7 @@ function HistoryBtn({ onHistoryClick }) {
 
       const fadeTimer = setTimeout(() => {
         setIsVisible(false);
-      }, 3000);
+      }, 1200);
 
       const hideTimer = setTimeout(() => {
         setOnClockClick('');
