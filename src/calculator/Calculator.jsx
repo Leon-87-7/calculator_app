@@ -124,6 +124,10 @@ function Calculator() {
           onChange={handleChange}
           checked={isLight}
           className="react-switch"
+          onHandleColor="#6f9395"
+          onColor="#3c5f62"
+          height={20}
+          width={48}
         />
         <div className="status">
           {isLight ? 'Light' : 'Dark'} Mode{' '}
